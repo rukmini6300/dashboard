@@ -1,0 +1,1178 @@
+body {
+    position: relative;
+      color: #000;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 60px;
+  }
+  
+  * {
+      padding: 0;
+      margin: 0
+  }
+  
+  *,:after,:before {
+      box-sizing: border-box
+  }
+  
+  *,:focus {
+      outline: 0
+  }
+  
+  img {
+      max-width: 100%;
+      vertical-align: bottom
+  }
+  
+  a {
+      color: #272b3f;
+      text-decoration: none;
+      display: inline-block
+  }
+  
+  a:focus,a:hover {
+      text-decoration: none
+  }
+  
+  ul {
+      list-style-type: none
+  }
+  
+  h1,h2,h3,h4,h5,h6,p,ul {
+      margin-bottom: 0
+  }
+  
+  .container {
+      margin: 0 auto;
+      position: relative
+  }
+  
+  @media only screen and (max-width: 992px) {
+      .container {
+          padding:0 12px
+      }
+  }
+  
+  @media(min-width: 992px) {
+      .container {
+          width:970px
+      }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+      .container {
+          width:1200px
+      }
+  }
+  
+  ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+      border-radius: 20px
+  }
+  
+  ::-webkit-scrollbar-button {
+      display: none
+  }
+  
+  ::-webkit-scrollbar-track {
+      background-color: #ccc
+  }
+  
+  ::-webkit-scrollbar-track-piece {
+      background-color: #ccc
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      background-color: #2f1dac
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+      background-color: #2f1dac
+  }
+  
+  ::-webkit-scrollbar-corner {
+      display: none
+  }
+  
+  ::-webkit-resizer {
+      display: none
+  }
+  
+  .list-inline {
+      padding: 0;
+      font-size: 0;
+      list-style-type: none
+  }
+  
+  .list-inline>li {
+      font-size: 14px;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 16px
+  }
+  
+  .text-right {
+      text-align: right
+  }
+  
+  .text-left {
+      text-align: left
+  }
+  
+  .text-center {
+      text-align: center
+  }
+
+  /*css start here*/
+  header{
+    position: fixed;
+    font-size: 0px;
+    width: 100%;
+    top: 0px;
+    z-index: 99;
+    border-bottom: 1px solid;
+    box-shadow: 0 2px 4px 0 rgba(227, 227, 227, 0.5);
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+}
+.sc_logo, .sc_menu_icon, .sc_group_icon{
+    display: inline-block;
+    vertical-align: middle;
+}
+.sc_group_icon{
+    padding: 0px 20px;
+}
+.sc_menu_icon{
+    border-right: 1px solid #ccc;
+   
+    padding: 0px 20px ;
+   
+}
+.sc_input{
+    font-size: 0px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+.search_icon >span >i{
+    position: absolute;
+    top:50%;
+    margin: -6px auto;
+    left: 14px;
+   color: #a5aebc;
+   padding-right:12px;
+}
+.search_icon{
+    font-size: 14px;
+}
+.search_icon >input{
+    height: 35px;
+    padding: 10px 0px 10px 41px;
+    border-radius: 4px;
+    border: 0.4px solid #dfdfe1;
+    background-color: #f8f8f8;
+    width: 100%;
+    
+}
+.sc_input{
+    display: inline-block;
+    vertical-align: middle;
+}
+.sc_left{
+    display: inline-block;
+    vertical-align: middle;
+}
+.sc_head_right{
+    font-size: 14px;
+    display: inline-block;
+}
+.sc_help{
+    display: inline-block;
+    padding: 0px 16px ;
+}
+.sc_help >span >img{
+    vertical-align: middle;
+    display: inline-block;
+}
+.sc_help >p{
+    display: inline-block;
+    padding-left:7px;
+    vertical-align: middle;
+}
+.sc_parent_head{
+    width: 100%;
+    font-size: 0px;
+    
+}
+.sc_left, .sc_input{
+    width:30%
+}
+.sc_head_right{
+    width: 40%;
+    text-align: right;
+}
+.photo{
+    padding: 0px 0px 0px 7.5px ;
+}
+.sc_help >span>img{
+    position: relative;
+    
+}
+.ntf >img{
+    color:#1b3a68;
+}
+.notification{
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: red;
+    
+}
+.pop_head{
+    position: relative;
+    display: none;
+}
+.pop_ico.active{
+    display: block;
+}
+.pop_head.active{
+    display: block;
+}
+.head_popup{
+    
+    font-size: 0px;
+    width: 222px;
+    position: absolute;
+    right: -2px;
+    top: 25px;
+    border: none;
+    background: #fff;
+    box-shadow: 0 5px 18px 0 rgb(32 61 101 / 50%);
+   height: 65px;
+    padding: 8px;
+}
+.pop_img, .pop_text, .pop_ico{
+    display: inline-block;
+    font-size: 14px;
+}
+.pop_img{
+    width:20%;
+   vertical-align: middle;
+}
+.pop_img >span >img{
+    max-width: 100%;
+    
+ 
+}
+.pop_text{
+    width:75%;
+    vertical-align: middle;
+    text-align: left;
+    padding: 0px 0px 0px 11px;
+    font-size: 10px;
+}
+.pop_ico{
+   width:5%;
+   vertical-align: top;
+}
+
+
+/*side menu start here*/
+.sc_menu_left{
+    position: relative;
+    font-size: 0px;
+    background-color:  #142234;
+    width: 180px;
+}
+.sc_nav_links{
+    font-size: 14px;
+}
+.sc_nav_db >p{
+    color:#ccc ;
+    
+}
+.sc_nav_db >p >span >img{
+    vertical-align: middle;
+}
+.sc_nav_db:hover{
+    background-color: #000;
+}
+
+
+.sc_nav_db{
+    padding: 13px 0px 17px 18px;
+}
+.sc_left_navmenu >li{
+    display: block;
+}
+
+/* imporatant */
+.sc_left_navmenu >li:hover p>span >i, .sc_left_navmenu >li:hover p>b{
+    background-color: #3694e1;
+    color: #fff!important;
+    padding:6px;
+    transition: 0.3s; 
+    border-radius: 2px;
+  }
+  .sc_left_navmenu>li:hover p, .sc_left_navmenu >li:hover  >p >span >i{
+    color: #fff !important;
+  }
+ .sc_emp_list >li a{
+    color:#fff;
+}
+.sc_nav_db >p >span >svg{
+    vertical-align: middle;
+    padding: 6px;
+}
+.text{
+   margin: 0px 0px 0px 6px;
+}
+.sc_nav_db{
+    position: relative;
+   
+}
+.sc_nav_db >p >span >svg{
+    color: #fff;
+}
+.sc_nav_db:after{
+    content: "";
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    margin: 0 auto 0;
+    padding: 4px;
+    border: solid #7b8b8e;
+    transform: rotate(320deg);
+    transition: 0.5s;
+    border-width: 0 1px 1px 0;
+    -moz-transform: rotate(320deg);
+    -webkit-transform: rotate(320deg);
+}
+.sc_emp_list{
+    display:none;
+} 
+.db_content{
+    font-size: 0px;
+    position: relative;
+   
+    left: 0;
+    right: 0px;
+    z-index: 1;
+}
+.sc_menu_left{
+    position: fixed;
+    left: 0px;
+    width: 195px;
+    height: 100%;
+    background-color: #142234;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* right menu css*/
+.right_menu{
+    width: calc(100% - 195px);
+    left: 195px;
+    position: relative;
+    right: 0;
+    background-color: #f3f5fb;
+    transition: 0.5s;
+    font-size: 14px;
+    padding: 28px 30px 34px 30px;
+}
+.db_content_menu{
+    width: 100%;
+  font-size: 0px;
+  
+}
+.right_menu_db{
+    display: inline-block;
+    width: 30%;
+    font-size: 30px;
+    vertical-align: middle;
+}
+.right_db_nav{
+    display: inline-block;
+   width: 70%;
+   font-size: 14px;
+   vertical-align: middle;
+   text-align: right;
+    
+}
+.month_db{
+    display: inline-block;
+    padding: 0px 21px 0px 0px;
+}
+.date_db{
+    display: inline-block;
+}
+.db_right_list{
+    vertical-align: middle;
+}
+.db_right_list >li{
+   display: inline-block;
+   padding: 7px 26px;
+   cursor: pointer;
+   vertical-align: middle;
+   background-color: #fff;
+   border: 1px solid  #ccc;
+}
+.date_db >label{
+    display: block;
+    text-align: left;
+    padding-bottom: 5px;
+    color:  #1b3a68;
+    font-size: 10px;
+}
+.date_db >input{
+    padding: 11px 16px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input{
+    font-family: 'Poppins', sans-serif;
+}
+/* boxes css start here */
+.box{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 18px 18px 16px 24px;
+    margin-right: 9px;
+    border-radius: 4px;
+}
+.box:hover{
+    transition: 0.5s;
+    box-shadow: 0 5px 18px 0 rgb(173 173 173 / 50%);
+}
+.db_box_head{
+    padding :41px 0px 21px 0px ;
+}
+.box_list >li{
+    display: inline-block;
+   width: 25%;
+   vertical-align: top;
+}
+.box_list{
+    width: 100%;
+    font-size: 0px;
+}
+.num{
+    color:rgb(121, 195, 10)
+}
+.box >p{
+    color: #042049;
+    padding: 8px 0px 8px 0px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.box >h3{
+    font-size: 24px;
+    color: #3c4f6b;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+.sc_text_right{
+    color:#3c4f6b;
+    font-size: 10px;
+   
+}
+.box{
+    position: relative;
+}
+.cirle1{
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 16px;
+    margin: 0px auto;
+    padding: 13px 17px;
+   border-radius: 50%;
+   height: 35px ;
+   width: 35px;
+    transition: 0.5s;
+    border: 1px solid#ccc;
+    background-color: #588cd2;
+    cursor: pointer;
+  
+}
+.cirle1 >img{
+    
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color: #fff;
+}
+
+.cirle2{
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 16px;
+    margin: 0px auto;
+    padding: 13px 17px;
+   border-radius: 50%;
+   height: 35px ;
+   width: 35px;
+    transition: 0.5s;
+    border: 1px solid#ccc;
+    cursor: pointer;
+    background-color:   #866fcb;
+}
+.cirle2 >img{
+    
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color: #fff;
+}
+
+.cirle3{
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 16px;
+    margin: 0px auto;
+    padding: 13px 17px;
+   border-radius: 50%;
+   height: 35px ;
+   width: 35px;
+    transition: 0.5s;
+    border: 1px solid#ccc;
+    background-color: #4ca9bf;
+    cursor: pointer;
+}
+.cirle3 >img{
+    
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color: #fff;
+}
+
+.cirle4{
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 16px;
+    margin: 0px auto;
+    padding: 13px 17px;
+   border-radius: 50%;
+   height: 35px ;
+   width: 35px;
+    transition: 0.5s;
+    border: 1px solid#ccc;
+    background-color: #a361be;
+    cursor: pointer;
+   
+}
+.cirle4 >img{
+    
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    color: #fff;
+}
+/* dash board second line css */
+
+.sc_emp1_list{
+    width:100%;
+    font-size: 0px;
+}
+.sc_emp1_list >li{
+    width:20%;
+    display: inline-block;
+    font-size: 14px;
+    padding: 15px 0 15px 20px;
+}
+.sc_emp1_list{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding-bottom: 21px;
+    margin-bottom: 21px;
+}
+
+.emp_box >h4{
+    padding: 0px 0px 17px 0px ;
+    font-size: 12px;
+    color: #1b3a68;
+   
+}
+.emp_box >p{
+    font-size: 24px;
+    /* padding-bottom: 42px; */
+    color: #3c4f6b;
+    font-weight: bold;
+}
+.emp_box{
+    position: relative;
+   padding: 21px 20px;
+   border-right: 1px solid #ccc;
+}
+.sc_emp1_list>li:last-child >.emp_box{
+    border-right: none!important; 
+}
+
+.emp_box >h4{
+    position:relative ;
+}
+.db_cirle1 >img{
+    position: absolute;
+    right:-4px;
+    background-color:  #d28458;
+    height: 35px;
+    width:35px;
+    top:-24px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 7px;
+    color: #fff;
+}
+.db_cirle2 >img{
+    position: absolute;
+    right:-4px;
+    background-color:  #6b91d6;
+    height: 35px;
+    width:35px;
+    top:-24px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 7px;
+    color: #fff;
+}
+.db_cirle3 >img{
+    position: absolute;
+    right:-4px;
+    background-color:  #d26891;
+    height: 35px;
+    width:35px;
+    top: -24px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 7px;
+    color: #fff;
+}
+.db_cirle4 >img{
+    position: absolute;
+    right:-4px;
+    background-color:  #a361be;
+    height: 35px;
+    width:35px;
+    top:-24px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 7px;
+    color: #fff;
+}
+.db_cirle5 >img{
+    position: absolute;
+    right:-4px;
+    background-color:  #59a5ca;
+    height: 35px;
+    width:35px;
+    top:-24px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 7px;
+    color: #fff;
+}
+
+
+/* low stack css start here */
+
+.sc_box2_low{
+    font-size: 14px;
+    padding: 21px 0px 20px 0px;
+}
+
+.box3_curousal{
+   background-color: #fff;
+   border: none;
+    box-shadow: 0px 1px 1px 0px #fff;
+    border-radius: 4px;
+    border: solid 0.6px #dfdfe1;
+}
+.sc_low_stack{
+    width: 100%;
+    font-size: 0px;
+    
+}
+.sc_low_stack >li{
+    display: inline-block;
+    font-size: 14px;
+    width: 25%;
+    padding-right:  9px;
+   vertical-align: top;
+   transition: 0.5s; 
+}
+.sc_low_stack >li:hover{
+    transform: scale(1.01);
+}
+.box3_curousal >p{
+    position: relative;
+    vertical-align: middle;
+    font-size: 12px;
+    cursor: pointer;
+}
+.curousal_box1 >i{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #d28458;
+    right: 4px;
+    top: -5px;
+    padding: 11px;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.box3_curousal >svg{
+    margin: 12px auto;
+    display: block;
+    
+}
+
+.curousal_box2 >i{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #a760c4;
+    right: 4px;
+    top: -5px;
+    padding: 11px;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.curousal_box3 >i{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #d28458;
+    right: 4px;
+    top: -5px;
+    padding: 11px;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.curousal_box4 >i{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #7fcd54;
+    right: 4px;
+    top: -5px;
+    padding: 11px;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.box3_curousal{
+  padding: 15px 15px 27px 20px; 
+    /* padding: 20px; */
+}
+.db_right_list >li{
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.db_right_list >li.active{
+    background-color: #eaf8ee;
+    border: 1px solid #32c05c;
+    color: #32c05c;
+    border-radius: 4px;
+}
+
+/* graph css start here */
+
+.db_gp_head{
+    width: 100%;
+    font-size: 0px;
+}
+.db_gp_head >li{
+    display: inline-block;
+}
+.graph{
+    width: 65%;
+    font-size: 14px;
+}
+.table_db{
+    width: 35%;
+    font-size: 14px;
+    vertical-align: top;
+}
+.graph1{
+   
+   margin: 0px 20px 29px 0px;
+   background-color: #fff;
+   padding: 18px 0px;
+   border-radius: 3px;
+   border: solid 0.6px #dfdfe1;;
+}
+.graph2{
+    margin: 0px 0px 29px 2px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border:none;
+   border-radius: 3px;
+   padding: 27px 18px 41px 18px;
+    
+}
+td{
+   padding: 6px;
+}
+.td_head >th{
+   color: #1f3e6b;
+    font-size: 11px;
+    padding: 40px 27px;
+}
+
+.td_data >td{
+    padding: 8px 32px 8px 31px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #1b3a68;
+}
+table >tbody tr{
+    border: 0.6px solid #dfdfe1;
+    padding: 12px;
+}
+.graph2 >p{
+    color: #1b3a68;
+    font-size: 12px;
+}
+.green{
+    color: #2bc76b;
+    padding: 0px 9px 0px 0px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.td_data:hover{
+    background-color: #e4f3ff;
+}
+.td_data{
+    position: relative;
+}
+.db_dot1{
+    border: 1px solid #ccc;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: #2bc76b;
+    position: absolute;
+    content: "";
+    top: 50%;
+    margin: -5px -17px;
+    border: none;
+
+}
+.bis{
+    color:#f5a623;
+    padding: 0px 9px 0px 0px;
+}
+.db_dot2{
+    border: 1px solid #ccc;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: #f5a623;
+    position: absolute;
+    content: "";
+    top: 50%;
+    margin: -5px -17px;
+    border: none;
+}
+/* cirles css start here */
+.db_cir_head{
+    width: 100%;
+    font-size: 0px;
+    
+}
+.db_cir_head >li{
+    width: 33.33%;
+    display: inline-block;
+    vertical-align: top;
+}
+.sc_cirle_ft >span{
+    text-align: center;
+    display: block;
+    padding-bottom: 31px;
+}
+.sc_cirle_ft >P{
+    font-size: 14px;
+    padding: 20px 0px 31px 25px;
+}
+.sc_cirle_ft{
+    margin: 0px 10px 19px 0px;
+    border-radius: 3px;
+    border: solid 0.6px #dfdfe1;
+    background-color: #fff;
+    padding: 20px 24px 28px;
+}
+/* footer css */
+.bd_footer{
+    text-align: center;
+}
+.bd_footer>p{
+    font-size: 10px;
+    color: #1b3a68;
+    padding-bottom: 6px;
+}
+.bd_footer >h3{
+    font-size: 10px;
+    color: #1b3a68;
+    padding-bottom: 25px;
+}
+/* CUROLGOES CSS START HERE */
+
+.item{
+    padding: 29px 0px 24px 73px ;
+}
+.cl_main1{
+ margin: 0px 5px;
+ border: 1px solid #ccc;
+ background-color: #fff;
+ border-radius: 6px;
+}
+.courosol1{
+    position: relative;
+}
+
+/* 
+.courosol1::before{
+    position: absolute;
+    content: "";
+    border: 1px solid black;
+    padding: 6px;
+    top: 50%;
+    border-width: 4px 4px 0px 0px;
+    transform: 45(deg);
+    transform: rotate(-135deg);
+    left: 16px;
+}
+
+.courosol1::after{
+    position: absolute;
+    content: "";
+    border: 1px solid black;
+    padding: 6px;
+    border-width: 4px 0px 0px 4px;
+    right: 18px;
+    top: 50%;
+    transform: rotate(135deg);
+}
+    
+
+.courosol2::before{
+    position: absolute;
+    content: "";
+    border: 1px solid black;
+    border-width: 4px 4px 0px 0px;
+    transform: 45(deg);
+    transform: rotate(-135deg);
+    padding: 6px;
+    top: 50%;
+   margin: -10px 0px 1px 24px;
+}
+
+.courosol2::after{
+    position: absolute;
+    content: "";
+    border: 1px solid black;
+    padding: 6px;
+    border-width: 4px 0px 0px 4px;
+    right: 18px;
+    top: 50%;
+   
+    transform: rotate(135deg);
+   
+   
+}  */
+.cl_main2{
+    margin: 0px 5px;
+ border: 1px solid #ccc;
+ background-color: #fff;
+ border-radius: 6px;
+}
+#item_shirt{
+display: inline-block;
+}
+#item_frog{
+display: inline-block;
+    
+}
+.db_main{
+    position: relative;
+    font-size: 0px;
+    width: 100%;
+    
+}
+.courosol1{
+    width: 50%;
+    display: inline-block;
+}
+.courosol2{
+    width: 50%;
+    display: inline-block;
+}
+.cl_img{
+    display: inline-block;
+    font-size: 12px;
+}
+.item{
+    position: relative;
+}
+
+.cl_text{
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: top;
+}
+.cl_text >h3{
+    padding: 21px 0px 14px 54px;
+    color: #3694e1;
+}
+.cl_text >h4{
+    padding: 21px 0px 14px 54px;
+    color: #1b3a68;
+}
+.cl_dot{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: #3694e1;
+    margin: 8px -18px;
+}
+.text1{
+    display: block;
+}
+
+/* canvas css start here */
+
+#canvas2{
+    margin: 0px auto;
+    padding-bottom: 15px;
+}
+#canvas3{
+    margin: 0px auto;
+    padding-bottom: 15px;
+}
+#canvas4{
+    margin: 0px auto;
+    padding-bottom: 15px;
+}
+/* important concept on dropdown */
+.sc_left_navmenu >li.active {
+    background-color: black;
+}
+ .sc_left_navmenu >li.active:after{
+    transform: rotate(400deg);
+    transition: 0.5s;
+ }
+ .sc_left_navmenu >li.active > .sc_emp_list{
+    display: block!important;
+ }
+.sc_emp_list >li >a{
+    padding: 10px 0px 0px 40px;
+}
+.sc_nav_db.active > p >span:first-child{
+    width: 32px;
+    display: inline-block;
+    height: 30px;
+    background-color: #588cd2;
+    line-height: 30px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+}
+/* circle graph start here */
+
+body { background-color:#ECF0F1;}
+/* .position {
+  float: left;
+  margin: 35px 26px;
+} */
+
+.progress-bar {
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+
+.progress-bar div {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.progress-bar div span {
+  position: absolute;
+  font-family: Arial;
+  font-size: 25px;
+  line-height: 75px;
+  height: 75px;
+  width: 75px;
+  left: 12.5px;
+  top: 12.5px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.progress-bar .background { background-color: #b3cef6; }
+
+.progress-bar .rotate {
+  clip: rect(0 100px 200px 0);
+  background-color: #4b86db;
+}
+
+.progress-bar .left {
+  clip: rect(0 100px 200px 0);
+  opacity: 1;
+  background-color: #b3cef6;
+}
+
+.progress-bar .right {
+  clip: rect(0 100px 200px 0);
+  transform: rotate(180deg);
+  opacity: 0;
+  background-color: #4b86db;
+}
+ @keyframes 
+toggle {  0% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 1;
+}
+}
+
+
+.graph2 >table{
+
+}
